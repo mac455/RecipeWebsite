@@ -4,27 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Webpage</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./script.js"></script>
 </head>
-<body class="bg-gray-100">
-    <header class="bg-white shadow p-4 h-20">
-        <nav class="fixed w-full bg-white px-3 sm:px-4 flex">
-            <div class="flex mx-auto items-center">
-                <a href="/" class="flex items-center">
-                    <img class="h-10" src="https://c8.alamy.com/comp/2C0YRH3/vector-illustration-of-cookware-pot-isolated-cartoon-2C0YRH3.jpg" alt="Logo">
-                </a>
-            </div>
-            <div class="flex items-center" >
-                <h2 class="text-cyan-500 font-bold">Cooking</h2>
-            </div>
-            <div class=" flex items-center">
-                <button class="text-gray-600 hover:text-gray-800 ml-4">
-                    <i class="fas fa-search h-6 w-6"></i>
-                </button>
-            </div>
-        </nav>
+<body>
+    <header class="header">
+        <a class="bars" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+        <div class="middlecontent">
+            <img class="img" src="https://cdn-icons-png.flaticon.com/128/649/649395.png" alt="Logo">
+            <h1>mac's daily recipes</h1>
+        </div>
+        <i class="fa fa-search" aria-hidden="true"></i>
     </header>
+    <div class="navbar">
+        <a class="active">Home</a>
+        <a href="#About">About</a>
+        <a href="#Recipes">Recipes</a>
+        <a href="#Contact">Contact</a>
+    </div>
+    <div class="titles">
+        <h1 class="maintitle">Welcome to my Recipe blog</h1>
+        <p class="pgraph">Here you can find all the different dishes I created</p>
+    </div>
+    <div class="stylecards">
+        <div class="card-container">
+            <h1>Nigerian Beef Stew</h1>
+            <div class="card">
+                <img src="20240621_184337.jpg" alt="food">
+                <p>Nigerian beef stew served on white rice with carrot and leaf salad</p>
+                <p><button id="stew" class="redirect-button">Click here to find this recipe!</button></p>
+            </div>
+        </div>
+        <div class="card-container">
+            <h1>Beef Suya with Plantain</h1>
+            <div class="card">
+                <img src="suya.jpg" alt="food">
+                <p>Nigerian beef suya with onions and a side of plantain</p>
+                <p><button id="Suya" class="redirect-button">Click here to find this recipe!</button></p>
+            </div>
+        </div>
+        <div class="card-container">
+            <h1></h1>
+            <div class="card">
+                <p>New recipe coming..</p>
+                <p><button class="redirect-button">Click here to find this recipe!</button></p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
